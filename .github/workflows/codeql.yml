@@ -20,7 +20,9 @@ jobs:
       - name: Harden Runner
         uses: step-security/harden-runner@f808768d1510423e83855289c910610ca9b43176 # v2.17.0
         with:
-          egress-policy: audit
+          egress-policy: block
+          disable-telemetry: true
+          allowed-endpoints: uploads.github.com,api.github.com,github.com
 
       - uses: actions/checkout@v4
       - name: Initialize CodeQL
