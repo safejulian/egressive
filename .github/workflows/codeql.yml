@@ -23,7 +23,7 @@ jobs:
           egress-policy: block
           disable-telemetry: true
           allowed-endpoints:
-            cheese.com:443
+            brew.sh:443
             uploads.github.com:443
             api.github.com:443
             github.com:443
@@ -32,7 +32,7 @@ jobs:
   
       - uses: actions/checkout@v4
       - run: npm install
-      - run: curl -L https://cheese.com
+      - run: curl -L https://brew.sh
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v3
         with:
