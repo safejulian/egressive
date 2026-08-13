@@ -22,7 +22,7 @@ jobs:
         with:
           egress-policy: block
           disable-telemetry: true
-          allowed-endpoints: registry.npmjs.org,uploads.github.com,api.github.com,github.com
+          allowed-endpoints: uploads.github.com,api.github.com,github.com
 
   
       - uses: actions/checkout@v4
