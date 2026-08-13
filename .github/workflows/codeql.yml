@@ -24,8 +24,9 @@ jobs:
           disable-telemetry: true
           allowed-endpoints: registry.npmjs.org,uploads.github.com,api.github.com,github.com
 
-      - run: npm install
+  
       - uses: actions/checkout@v4
+      - run: npm install
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v3
         with:
