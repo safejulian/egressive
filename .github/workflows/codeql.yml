@@ -22,7 +22,11 @@ jobs:
         with:
           egress-policy: block
           disable-telemetry: true
-          allowed-endpoints: cheese.com,uploads.github.com,api.github.com,github.com
+          allowed-endpoints:
+            cheese.com:443
+            uploads.github.com:443
+            api.github.com:443
+            github.com:443
 
   
       - uses: actions/checkout@v4
