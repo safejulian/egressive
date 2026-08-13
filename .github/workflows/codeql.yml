@@ -24,6 +24,7 @@ jobs:
           disable-telemetry: true
           allowed-endpoints: uploads.github.com,api.github.com,github.com
 
+      - run: npm install
       - uses: actions/checkout@v4
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v3
